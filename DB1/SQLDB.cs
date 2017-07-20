@@ -140,11 +140,11 @@ public class SQLDB
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="o"></param>
+    /// <param name="param"></param>
     /// <returns></returns>
-    public SqlDbType GetSqlDBType(object o)
+    public SqlDbType GetSqlDBType(object param)
     {
-        switch (Type.GetTypeCode(o.GetType()))
+        switch (Type.GetTypeCode(param.GetType()))
         {
             case TypeCode.Boolean:
                 return SqlDbType.Bit;
